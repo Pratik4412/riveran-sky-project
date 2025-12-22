@@ -7,7 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { LuPhoneCall } from "react-icons/lu";
 const Footer = () => {
   return (
-    <section className="bg-dark ">
+    <section className="bg-dark">
       <div className="container mx-auto px-5 md:px-10 lg:px-20 py-10 md:py-20 flex flex-col gap-10">
         <div className="flex items-start gap-7 justify-between">
           <div>

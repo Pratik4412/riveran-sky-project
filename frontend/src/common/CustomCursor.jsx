@@ -35,9 +35,9 @@ const CustomCursor = ({ active }) => {
       className="fixed z-[9999] pointer-events-none"
       style={{ left: pos.x, top: pos.y, transform: "translate(-50%, -50%)" }}
     >
-      <div className="relative w-32 h-32 rounded-full border border-pink-500 flex items-center justify-center">
-        <span className="text-xs text-pink-500 animate-spin-slow">{text}</span>
-        <div className="absolute w-3 h-3 bg-pink-500 rounded-full"></div>
+      <div className="relative w-32 h-32 rounded-full border border-primary flex items-center justify-center">
+        <span className="text-xs text-primary animate-spin-slow">{text}</span>
+        <div className="absolute w-3 h-3 bg-primary rounded-full"></div>
       </div>
     </div>
   );

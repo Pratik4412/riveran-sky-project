@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./common/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Testimonial from "./pages/Testimonial";
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const App = () => {
           duration: 3000,
         }}
       />
+      <Testimonial />
       <Footer />
     </div>
   );

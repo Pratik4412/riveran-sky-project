@@ -9,6 +9,7 @@ import { AiOutlineCar } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
+import Testi from "../assets/1743399665832.jpeg";
 export const headerText = [
   { path: "/", name: "Home" },
   {
@@ -129,5 +130,32 @@ export const socialMedia = [
         className="text-gray-200 hover:text-primary"
       />
     ),
+  },
+];
+
+export const testimonials = [
+  {
+    img: Testi,
+    dsc: "I also had the pleasure of dining at the hotel's restaurant, and the culinary experience was nothing short of extraordinary. The flavors, the presentation, and the ambiance all contributed to an unforgettable dining experience that I'll treasure.",
+    name: "Pratik Dhere",
+    positions: "CEO & Founder",
+  },
+  {
+    img: Testi,
+    dsc: "I also had the pleasure of dining at the hotel's restaurant, and the culinary experience was nothing short of extraordinary. The flavors, the presentation, and the ambiance all contributed to an unforgettable dining experience that I'll treasure.",
+    name: "Satosh Dhere",
+    positions: "CEO & Founder",
+  },
+  {
+    img: Testi,
+    dsc: "I also had the pleasure of dining at the hotel's restaurant, and the culinary experience was nothing short of extraordinary. The flavors, the presentation, and the ambiance all contributed to an unforgettable dining experience that I'll treasure.",
+    name: "Pratik Dhere",
+    positions: "CEO & Founder",
+  },
+  {
+    img: Testi,
+    dsc: "I also had the pleasure of dining at the hotel's restaurant, and the culinary experience was nothing short of extraordinary. The flavors, the presentation, and the ambiance all contributed to an unforgettable dining experience that I'll treasure.",
+    name: "Santosh Dhere",
+    positions: "CEO & Founder",
   },
 ];
