@@ -28,7 +28,7 @@ const Testimonial = () => {
             key={i}
             className={`absolute inset-0 flex flex-col gap-4 items-center text-center p-4 md:p-8 rounded-2xl bg-[#f7f3ef] text-white transition-all duration-500 ease-in-out${
               i === current
-                ? "opacity-100 scale-100 z-50"
+                ? "opacity-100 scale-100 z-10"
                 : "opacity-0 scale-90 z-0"
             } `}
           >

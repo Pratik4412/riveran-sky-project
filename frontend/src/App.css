@@ -46,3 +46,13 @@ html {
 .primary-button:hover {
   background-color: var(--primary-color);
 }
+
+.why-choose-us {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url("./assets/why-choose-us-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

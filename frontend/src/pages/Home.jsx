@@ -12,6 +12,9 @@ import HomeRooms from "../components/homepage/HomeRooms";
 import video from "../assets/landingPage/rever-hotel-vedio.mp4";
 import { servicesSection } from "../data/text";
 import HomeGallery from "../components/homepage/HomeGallery";
+import NearPlaces from "../components/homepage/NearPlaces";
+import Fooditems from "../components/homepage/Fooditems";
+import WhyChooseUs from "../components/homepage/WhyChooseUs";
 const images = [hero1, hero2, hero3];
 
 const Home = () => {
@@ -169,7 +172,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <HomeGallery />
+      {/* <HomeGallery /> */}
+      <Fooditems />
+      <WhyChooseUs />
+      <NearPlaces />
     </div>
   );
 };
