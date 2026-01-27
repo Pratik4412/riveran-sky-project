@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riveranskyresorts.com/sitemap.xml
+
+# Disallow admin or private pages if any
+# Disallow: /admin/

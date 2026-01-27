@@ -6,6 +6,7 @@ const AOSWrapper = ({
   duration = 1000,
   delay = 0,
   once = false,
+  offset = 120,
 }) => {
   return (
     <div
@@ -13,6 +14,8 @@ const AOSWrapper = ({
       data-aos-duration={duration}
       data-aos-delay={delay}
       data-aos-once={once}
+      data-aos-offset={offset}
+      data-aos-anchor-placement="top-bottom"
     >
       {children}
     </div>

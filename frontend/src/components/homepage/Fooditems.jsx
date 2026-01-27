@@ -4,6 +4,23 @@ import rec_2 from "../../assets/rec-2.webp";
 import rec_3 from "../../assets/rec-3.webp";
 
 const Fooditems = () => {
+  const foodImages = [
+    {
+      src: rec_1,
+      alt: "Delicious vegetarian food at RiverAnSky Luxury Resorts Nashik - Multi-cuisine restaurant",
+      title: "Vegetarian Cuisine - RiverAnSky Resorts",
+    },
+    {
+      src: rec_2,
+      alt: "Premium non-vegetarian dishes at RiverAnSky Restaurant Nashik - Fine dining experience",
+      title: "Non-Vegetarian Delicacies - RiverAnSky Resorts",
+    },
+    {
+      src: rec_3,
+      alt: "Multi-cuisine restaurant food at RiverAnSky Luxury Resorts Nashik - Best dining in Maharashtra",
+      title: "Multi-Cuisine Restaurant - RiverAnSky Resorts",
+    },
+  ];
   return (
     <section className="bg-dark">
       <div className="container mx-auto px-5 md:px-10 lg:px-20 py-10 lg:py-20">
@@ -31,24 +48,38 @@ const Fooditems = () => {
           <div className="w-full lg:w-1/2 flex flex-col gap-6">
             {/* Top Images */}
             <div className="flex gap-4 sm:flex-row flex-col">
-              <img
-                src={rec_1}
-                alt="Food item"
-                className="sm:w-1/2 h-[220px] object-cover rounded-xl"
-              />
-              <img
-                src={rec_2}
-                alt="Food item"
-                className="sm:w-1/2 h-[220px] object-cover rounded-xl"
-              />
+              <figure className="sm:w-1/2">
+                <img
+                  src={foodImages[0].src}
+                  alt={foodImages[0].alt}
+                  title={foodImages[0].title}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-[220px] object-cover rounded-xl hover:scale-105 transition-transform duration-500"
+                />
+              </figure>
+              <figure className="sm:w-1/2">
+                <img
+                  src={foodImages[1].src}
+                  alt={foodImages[1].alt}
+                  title={foodImages[1].title}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-[220px] object-cover rounded-xl hover:scale-105 transition-transform duration-500"
+                />
+              </figure>
             </div>
-
             {/* Bottom Image */}
-            <img
-              src={rec_3}
-              alt="Food item"
-              className="w-full h-[260px] object-cover rounded-xl"
-            />
+            <figure className="w-full">
+              <img
+                src={foodImages[2].src}
+                alt={foodImages[2].alt}
+                title={foodImages[2].title}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-[260px] object-cover rounded-xl hover:scale-105 transition-transform duration-500"
+              />
+            </figure>
           </div>
         </div>
       </div>

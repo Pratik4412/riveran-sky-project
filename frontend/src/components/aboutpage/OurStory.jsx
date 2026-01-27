@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const colors = {
   primary: {
@@ -18,91 +19,6 @@ const colors = {
   },
   dark: "#1B1B1B",
 };
-// const OurStory = () => {
-//   useEffect(() => {
-//     AOS.init({
-//       duration: 1000,
-//       once: true,
-//       easing: "ease-out-cubic",
-//     });
-//   }, []);
-
-//   return (
-//     <section className="bg-dark text-white py-16 md:py-24">
-//       <div className="container mx-auto px-5 md:px-10 lg:px-20">
-//         {/* SECTION HEADER */}
-//         <div className="max-w-3xl mb-14" data-aos="fade-up">
-//           <h2 className="text-3xl md:text-4xl font-heading font-semibold">
-//             Our <span className="text-primary">Story</span>
-//           </h2>
-//           <div className="w-20 h-[3px] bg-primary mt-3 mb-6"></div>
-//           <p className="text-white/80 leading-relaxed text-base md:text-lg">
-//             Founded with a vision to create a sanctuary of relaxation and
-//             indulgence, RiverANSky Luxury Resorts stands as a testament to
-//             elegance and hospitality. Over the years, we have become a premier
-//             destination for travelers seeking luxury and tranquility in the
-//             heart of Nashik.
-//           </p>
-//         </div>
-
-//         {/* GRID CONTENT */}
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-//           {/* MISSION */}
-//           <div data-aos="fade-right">
-//             <h3 className="text-2xl font-heading font-semibold mb-4">
-//               Our <span className="text-primary">Mission</span>
-//             </h3>
-//             <p className="text-white/80 leading-relaxed">
-//               Our mission is simple: to offer our guests a perfect blend of
-//               comfort, luxury, and personalized service. Whether you are here
-//               for a vacation, a special event, or a business trip, our goal is
-//               to make your stay truly memorable.
-//             </p>
-//           </div>
-
-//           {/* OFFERINGS */}
-//           <div data-aos="fade-left">
-//             <h3 className="text-2xl font-heading font-semibold mb-6">
-//               What We <span className="text-primary">Offer</span>
-//             </h3>
-
-//             <ul className="space-y-5">
-//               <li className="border-l-4 border-primary pl-4">
-//                 <h4 className="font-semibold text-lg">
-//                   Luxurious Accommodations
-//                 </h4>
-//                 <p className="text-white/70 text-sm leading-relaxed">
-//                   Our Deluxe AC Rooms are designed for ultimate comfort with
-//                   modern amenities and breathtaking views.
-//                 </p>
-//               </li>
-
-//               <li className="border-l-4 border-primary pl-4">
-//                 <h4 className="font-semibold text-lg">Exquisite Dining</h4>
-//                 <p className="text-white/70 text-sm leading-relaxed">
-//                   From vegetarian to non-vegetarian delights, our chefs craft
-//                   culinary experiences using the freshest ingredients.
-//                 </p>
-//               </li>
-
-//               <li className="border-l-4 border-primary pl-4">
-//                 <h4 className="font-semibold text-lg">
-//                   World-Class Facilities
-//                 </h4>
-//                 <p className="text-white/70 text-sm leading-relaxed">
-//                   Swimming Pool, Banquet Hall for weddings & events, and a lush
-//                   green Lawn for unforgettable outdoor celebrations.
-//                 </p>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default OurStory;
 
 const OurStory = () => {
   useEffect(() => {
@@ -294,14 +210,15 @@ const OurStory = () => {
             Ready to plan your next staycation, celebration, or corporate
             retreat at RiverANSky?
           </p>
-          <button
+          <Link
+            to="/contact"
             style={{
               background: `linear-gradient(135deg, ${colors.primary.DEFAULT}, ${colors.primary[700]})`,
             }}
             className="rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white shadow-[0_14px_30px_rgba(221,51,51,0.5)] hover:shadow-[0_18px_40px_rgba(221,51,51,0.65)] transition-shadow duration-300"
           >
             Enquire Now
-          </button>
+          </Link>
         </div>
       </div>
     </section>

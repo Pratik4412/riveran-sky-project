@@ -43,7 +43,10 @@ const NearPlaces = () => {
         </div>
         <div className="flex gap-4 overflow-x-auto pb-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 scrollbar-hide">
           {nearPlaces.map((item, i) => (
-            <div className="relative group overflow-hidden rounded-xl min-w-[80%] sm:min-w-[60%] md:min-w-0">
+            <div
+              key={nearPlaces.id || i}
+              className="relative group overflow-hidden rounded-xl min-w-[80%] sm:min-w-[60%] md:min-w-0"
+            >
               <AOSWrapper
                 key={item.title + i}
                 animation="fade-left"

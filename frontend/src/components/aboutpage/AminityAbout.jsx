@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AminityAbout = () => {
   return (
@@ -12,7 +13,9 @@ const AminityAbout = () => {
             The Best Summer Vacation <br className="hidden md:block" /> Tours
             For Your Family
           </h1>
-          <button className="primary-button">Our Packages</button>
+          <Link to="/contact" className="primary-button">
+            Our Packages
+          </Link>
         </div>
       </div>
     </section>

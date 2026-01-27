@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { rooms } from "../../data/text";
+import BookPopUp from "../../common/BookPopUp";
 
 const HomeRooms = () => {
+  const [openBooking, setOpenBooking] = useState(false);
   return (
     <div className="bg-dark">
       <section className="w-full container mx-auto px-5 md:px-10 lg:px-20 py-10 lg:py-20 flex flex-col gap-3 md:gap-6">
@@ -23,9 +25,6 @@ const HomeRooms = () => {
               <br className="hidden md:block" /> as well as 36 suites and junior
               suites.
             </p>
-            <Link className="text-sm text-primary font-body font-semibold">
-              View All Rooms
-            </Link>
           </div>
         </div>
         <div className="grid grid-cols-12 gap-4 md:gap-8">
@@ -34,8 +33,8 @@ const HomeRooms = () => {
               index < 3
                 ? "lg:col-span-4"
                 : index === 3
-                ? "lg:col-span-4"
-                : "lg:col-span-8";
+                  ? "lg:col-span-4"
+                  : "lg:col-span-8";
 
             return (
               <div
@@ -58,22 +57,23 @@ const HomeRooms = () => {
                   <h3 className="text-xl font-heading font-semibold">
                     {room.title}
                   </h3>
-                  <p className="text-sm text-white/80 mt-1">
+                  {/* <p className="text-sm text-white/80 mt-1">
                     Price from {room.price}
-                  </p>
+                  </p> */}
 
-                  <Link
-                    to="/booking"
+                  <button
+                    onClick={() => setOpenBooking(true)}
                     className="inline-block mt-4 bg-primary px-5 py-2 text-sm font-semibold rounded-md hover:bg-primary/90 transition"
                   >
                     Book Now
-                  </Link>
+                  </button>
                 </div>
               </div>
             );
           })}
         </div>
       </section>
+      <BookPopUp isOpen={openBooking} onClose={() => setOpenBooking(false)} />
     </div>
   );
 };

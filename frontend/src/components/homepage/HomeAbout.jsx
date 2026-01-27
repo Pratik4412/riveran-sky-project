@@ -39,7 +39,7 @@ const HomeAbout = () => {
                 ABOUT RIVERANSKY
               </h4>
               <h1 className="text-3xl md:text-4xl font-heading font-semibold text-dark">
-                Welcome to RiverANSky Luxury Resorts Escape to Luxury!
+                Welcome to River an Sky Resort Escape to Luxury!
               </h1>
             </div>
             <div className=" w-full justify-end flex ">

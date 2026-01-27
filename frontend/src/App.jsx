@@ -9,17 +9,22 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Testimonial from "./pages/Testimonial";
 import CommonContact from "./pages/CommonContact";
+import SchemaMarkup from "./common/SchemaMarkup";
 
 const App = () => {
   useEffect(() => {
     AOS.init({
       duration: 800,
+      offset: 50, // Add this
       once: false,
+      disable: false,
+      anchorPlacement: "top-bottom",
       easing: "ease-in-out-back",
     });
   }, []);
   return (
-    <div>
+    <>
+      <SchemaMarkup />
       <Header />
       <main>
         <ScrollToTop />
@@ -36,7 +41,7 @@ const App = () => {
       <Testimonial />
       <CommonContact />
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -6,7 +6,8 @@ import aboutTwo from "../assets/aboutPage/about-sec-2.webp";
 import OurStory from "../components/aboutpage/OurStory";
 import AminityAbout from "../components/aboutpage/AminityAbout";
 import weOffer from "../assets/aboutPage/weOffer.webp";
-import { faqs } from "../data/text";
+import { faqs, seoData } from "../data/text";
+import SEO from "../common/SEO";
 gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   const sectionRef = useRef(null);
@@ -58,6 +59,14 @@ const About = () => {
 
   return (
     <div>
+      <SEO
+        title={seoData.about.title}
+        description={seoData.about.description}
+        keywords={seoData.about.keywords}
+        ogImage={seoData.about.ogImage}
+        canonical={seoData.about.canonical}
+        ogUrl={seoData.about.canonical}
+      />
       <div>
         <section className="about-us">
           <div className="absolute bg-black/50 w-full h-[70vh]" />
