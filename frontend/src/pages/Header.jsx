@@ -13,7 +13,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl border-b border-white/10">
       <div className="px-5 md:px-10 lg:px-20 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Logo" className="h-14 lg:h-16 w-auto" />
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-14 lg:h-16 w-auto"
+            loading="lazy"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

@@ -18,6 +18,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Hotel Logo"
+                loading="lazy"
                 className="w-[180px] lg:w-[200px] h-auto hover:opacity-90 transition-opacity"
               />
             </Link>

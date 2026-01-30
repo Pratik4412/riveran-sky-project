@@ -25,6 +25,7 @@ const Amenities = () => {
             <img
               src="/path-to-amenities-hero.jpg"
               alt="Amenities"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
@@ -76,6 +77,7 @@ const Amenities = () => {
                     <img
                       src={amenity.image}
                       alt={amenity.title}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
 

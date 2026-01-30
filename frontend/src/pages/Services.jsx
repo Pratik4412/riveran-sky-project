@@ -54,6 +54,7 @@ const Services = () => {
                 <img
                   src={item.img}
                   alt={item.heading}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -25,6 +25,7 @@ const SapphireLawn = () => {
             <img
               src="/path-to-sapphire-lawn-hero.jpg"
               alt="Sapphire Lawn"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
@@ -80,7 +81,8 @@ const SapphireLawn = () => {
                   </div> */}
                     <img
                       src={feature.icon}
-                      alt=""
+                      alt="mainIage"
+                      loading="lazy"
                       className=" rounded-xl bg-gradient-to-br from-primary/20 to-primary/5   text-7xl md:text-8xl hover:scale-110 transition-transform duration-500"
                     />
                   </div>

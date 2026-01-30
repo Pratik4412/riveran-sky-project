@@ -35,6 +35,7 @@ const Testimonial = () => {
             <img
               src={item.img}
               alt={item.name + i}
+              loading="lazy"
               className="w-20 h-20 rounded-full object-cover  border-2 border-white/20"
             />
             <p className="text-base md:text-xl text-dark font-heading">

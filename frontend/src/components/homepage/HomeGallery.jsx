@@ -22,29 +22,64 @@ const HomeGallery = () => {
         <div className="flex flex-col md:flex-row w-full h-full">
           <div className="flex flex-col w-full">
             <div className="w-full">
-              <img src={one} alt="" className="w-full h-full object-cover" />
+              <img
+                src={one}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
             <div className="w-full">
-              <img src={two} alt="" className="w-full h-full object-cover" />
+              <img
+                src={two}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="flex flex-col w-full">
             <div className="w-full">
-              <img src={three} alt="" className="w-full h-full object-cover" />
+              <img
+                src={three}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
             <div className="w-full">
-              <img src={four} alt="" className="w-full h-full object-cover" />
+              <img
+                src={four}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="w-full">
-            <img src={five} alt="" className="w-full h-full object-cover" />
+            <img
+              src={five}
+              alt=""
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
           <div className="flex flex-col w-full">
             <div className="w-full">
-              <img src={six} alt="" className="w-full h-full object-cover" />
+              <img
+                src={six}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
             <div className="w-full">
-              <img src={seven} alt="" className="w-full h-full object-cover" />
+              <img
+                src={seven}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>{" "}

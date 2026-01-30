@@ -614,6 +614,7 @@ const CorporateMeetings = () => {
                 <div className="relative h-80 md:h-96 rounded-3xl overflow-hidden group cursor-pointer">
                   <img
                     src={weOffer}
+                    loading="lazy"
                     alt="Shadow Suit - Dark Hall"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -635,6 +636,7 @@ const CorporateMeetings = () => {
                 <div className="relative h-80 md:h-96 rounded-3xl overflow-hidden group cursor-pointer">
                   <img
                     src={gall}
+                    loading="lazy"
                     alt="Private Meeting Rooms"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />

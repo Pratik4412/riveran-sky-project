@@ -111,6 +111,7 @@ const About = () => {
                   <img
                     src={aboutOne}
                     alt="Luxury Resort"
+                    loading="lazy"
                     className="w-full h-[420px] object-cover rounded-sm"
                   />
                 </div>
@@ -119,6 +120,7 @@ const About = () => {
                   <img
                     src={aboutTwo}
                     alt="Luxury Interior"
+                    loading="lazy"
                     className="w-full h-[420px] object-cover rounded-sm"
                   />
                 </div>
@@ -167,7 +169,12 @@ const About = () => {
             </div>
             <div className="relative w-full">
               <div className="flex items-center justify-end">
-                <img src={weOffer} alt="weoffter" className="w-[400px]" />
+                <img
+                  src={weOffer}
+                  alt="weoffter"
+                  className="w-[400px]"
+                  loading="lazy"
+                />
               </div>
               <div className="absolute left-10 bottom-16 flex items-center gap-6">
                 <div className="flex flex-col gap-2 justify-center items-center w-64 h-44 bg-primary-600 animate-bounce-slow">

@@ -46,6 +46,7 @@ const Rooms = () => {
                   <img
                     src={room.image}
                     alt={room.title}
+                    loading="lazy"
                     className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-110"
                   />
 

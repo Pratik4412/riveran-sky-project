@@ -25,6 +25,7 @@ const SwimmingPool = () => {
             <img
               src="/path-to-pool-hero.jpg"
               alt="Swimming Pool"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
@@ -86,6 +87,7 @@ const SwimmingPool = () => {
                 <img
                   src={swiming}
                   alt="Pool Details"
+                  loading="lazy"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>

@@ -43,12 +43,12 @@ const HomeAbout = () => {
               </h1>
             </div>
             <div className=" w-full justify-end flex ">
-              <img src={aboutImgOne} alt="aboutImgOne" />
+              <img src={aboutImgOne} alt="aboutImgOne" loading="lazy" />
             </div>
           </div>
           <div className="w-full flex flex-col gap-5">
             <div>
-              <img src={aboutImgTwo} alt="aboutImgTwo" />
+              <img src={aboutImgTwo} alt="aboutImgTwo" loading="lazy" />
             </div>
             <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
               Nestled in the Serene Beauty of Rajur Bahula, Nashik, RiverANSky

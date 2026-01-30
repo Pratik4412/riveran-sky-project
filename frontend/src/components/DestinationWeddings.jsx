@@ -27,6 +27,7 @@ const DestinationWeddings = () => {
             <img
               src="/path-to-wedding-hero.jpg"
               alt="Destination Wedding"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
@@ -175,6 +176,7 @@ const DestinationWeddings = () => {
                 <div className="relative h-96 rounded-3xl overflow-hidden group">
                   <img
                     src={web_1}
+                    loading="lazy"
                     alt="Outdoor Wedding Venue"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -185,6 +187,7 @@ const DestinationWeddings = () => {
                 <div className="relative h-96 rounded-3xl overflow-hidden group">
                   <img
                     src={web_2}
+                    loading="lazy"
                     alt="Indoor Wedding Venue"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -205,6 +208,7 @@ const DestinationWeddings = () => {
                   <img
                     src={din_1}
                     alt="Outdoor Wedding Venue"
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
@@ -214,6 +218,7 @@ const DestinationWeddings = () => {
                 <div className="relative h-96 rounded-3xl overflow-hidden group">
                   <img
                     src={din_2}
+                    loading="lazy"
                     alt="Indoor Wedding Venue"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />

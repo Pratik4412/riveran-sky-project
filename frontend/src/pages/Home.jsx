@@ -113,6 +113,7 @@ const Home = () => {
                 <img
                   src={img}
                   alt={`slide-${index}`}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </SwiperSlide>

@@ -39,7 +39,7 @@ import AOSWrapper from "../../common/AOSWrapper";
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose-us relative bg-fixed bg-center bg-cover" >
+    <section className="why-choose-us relative bg-fixed bg-center bg-cover">
       <div className="absolute inset-0 bg-black/40" />
       <div className="container mx-auto px-5 md:px-10lg:px-20 py-10 flex items-center flex-col lg:flex-row">
         <div className="relative flex flex-col gap-3">
@@ -70,6 +70,7 @@ const WhyChooseUs = () => {
                   <img
                     src={item.img}
                     alt={item.title}
+                    loading="lazy"
                     className="w-[180px] h-[180px] md:w-[150px] md:h-[150px] object-contain flex-shrink-0"
                   />
                   <div>
