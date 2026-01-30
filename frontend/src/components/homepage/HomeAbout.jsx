@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import aboutImgOne from "../../assets/landingPage/about-one.webp";
-import aboutImgTwo from "../../assets/landingPage/about-two.webp";
+import aboutImgOne from "../../assets/landingPage/rever-one.png";
+import aboutImgTwo from "../../assets/landingPage/rever-two.png";
 
 const colors = {
   primary: {
@@ -43,12 +43,12 @@ const HomeAbout = () => {
               </h1>
             </div>
             <div className=" w-full justify-end flex ">
-              <img src={aboutImgOne} alt="" />
+              <img src={aboutImgOne} alt="aboutImgOne" />
             </div>
           </div>
           <div className="w-full flex flex-col gap-5">
             <div>
-              <img src={aboutImgTwo} alt="" />
+              <img src={aboutImgTwo} alt="aboutImgTwo" />
             </div>
             <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
               Nestled in the Serene Beauty of Rajur Bahula, Nashik, RiverANSky

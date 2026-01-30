@@ -30,31 +30,31 @@ const BookPopUp = ({ isOpen, onClose }) => {
       [e.target.name]: e.target.value,
     });
   };
-  const handleBookingSubmit = (e) => {
-    e.preventDefault();
+  // const handleBookingSubmit = (e) => {
+  //   e.preventDefault();
 
-    if (!bookingData.checkIn || !bookingData.checkOut) {
-      alert("Please select check-in and check-out dates");
-      return;
-    }
+  //   if (!bookingData.checkIn || !bookingData.checkOut) {
+  //     alert("Please select check-in and check-out dates");
+  //     return;
+  //   }
 
-    if (bookingData.checkOut <= bookingData.checkIn) {
-      alert("Check-out date must be after check-in date");
-      return;
-    }
+  //   if (bookingData.checkOut <= bookingData.checkIn) {
+  //     alert("Check-out date must be after check-in date");
+  //     return;
+  //   }
 
-    const hotelId = "30335"; // real eGlobe hotel ID
+  //   const hotelId = "30335"; // real eGlobe hotel ID
 
-    const bookingUrl =
-      `https://booking.eglobe-solutions.com/?` +
-      `hotelId=${hotelId}` +
-      `&checkIn=${bookingData.checkIn}` +
-      `&checkOut=${bookingData.checkOut}` +
-      `&adults=${Number(bookingData.adults)}` +
-      `&children=${Number(bookingData.children)}`;
+  //   const bookingUrl =
+  //     `https://booking.eglobe-solutions.com/?` +
+  //     `hotelId=${hotelId}` +
+  //     `&checkIn=${bookingData.checkIn}` +
+  //     `&checkOut=${bookingData.checkOut}` +
+  //     `&adults=${Number(bookingData.adults)}` +
+  //     `&children=${Number(bookingData.children)}`;
 
-    window.open(bookingUrl, "_blank"); // better UX than same tab
-  };
+  //   window.open(bookingUrl, "_blank"); // better UX than same tab
+  // };
 
   // const handleBookingSubmit = async (e) => {
   //   e.preventDefault();
@@ -82,52 +82,52 @@ const BookPopUp = ({ isOpen, onClose }) => {
   //     setLoading(false);
   //   }
   // };
-  //   const handleBookingSubmit = async (e) => {
-  //     e.preventDefault();
-  //     setLoading(true);
+  const handleBookingSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-  //     try {
-  //       const response = await fetch("http://localhost:8000/api/get-in-tech", {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({
-  //           firstName: bookingData.firstName,
-  //           lastName: bookingData.lastName,
-  //           email: bookingData.email,
-  //           phone: bookingData.phone,
-  //           checkIn: bookingData.checkIn,
-  //           checkOut: bookingData.checkOut,
-  //           adults: Number(bookingData.adults),
-  //           children: Number(bookingData.children),
-  //         }),
-  //       });
+    try {
+      const response = await fetch("http://localhost:8000/api/get-in-tech", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName: bookingData.firstName,
+          lastName: bookingData.lastName,
+          email: bookingData.email,
+          phone: bookingData.phone,
+          checkIn: bookingData.checkIn,
+          checkOut: bookingData.checkOut,
+          adults: Number(bookingData.adults),
+          children: Number(bookingData.children),
+        }),
+      });
 
-  //       const data = await response.json();
+      const data = await response.json();
 
-  //       if (!response.ok) {
-  //         throw new Error(data.message || "Booking failed");
-  //       }
+      if (!response.ok) {
+        throw new Error(data.message || "Booking failed");
+      }
 
-  //       alert("Booking request sent successfully!");
+      alert("Booking request sent successfully!");
 
-  //       setBookingData({
-  //         firstName: "",
-  //         lastName: "",
-  //         email: "",
-  //         phone: "",
-  //         checkIn: "",
-  //         checkOut: "",
-  //         adults: "2",
-  //         children: "0",
-  //       });
-  //     } catch (error) {
-  //       alert(error.message);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
+      setBookingData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        checkIn: "",
+        checkOut: "",
+        adults: "2",
+        children: "0",
+      });
+    } catch (error) {
+      alert(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <>
       <div className="fixed inset-0 bg-black/60 z-40" onClick={onClose} />
@@ -257,7 +257,7 @@ const BookPopUp = ({ isOpen, onClose }) => {
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
-                  <option value="5">5+</option>
+                  <option value="5+">5+</option>
                 </select>
               </div>
               <div>
@@ -274,7 +274,7 @@ const BookPopUp = ({ isOpen, onClose }) => {
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="4">4+</option>
+                  <option value="4+">4+</option>
                 </select>
               </div>
             </div>
@@ -301,3 +301,6 @@ const BookPopUp = ({ isOpen, onClose }) => {
 };
 
 export default BookPopUp;
+
+
+
